@@ -1,0 +1,48 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="{% static 'account/image/logo.jpg' %}" type="image/gif" sizes="32x32">
+    <link href="https://fonts.googleapis.com/css?family=Raleway:100,300,400,500,700,900" rel="stylesheet">
+    <!-- Additional CSS Files -->
+    <link rel="stylesheet" type="text/css" href="{% static 'account/css/bootstrap.min.css' %}">
+
+    <link rel="stylesheet" type="text/css" href="{% static 'account/css/font-awesome.css' %}">
+
+    <link rel="stylesheet" href="{% static 'account/css/templatemo-softy-pinko.css' %}">
+    <!-- jQuery -->
+    <script src="{% static 'account/js/jquery-2.1.0.min.js' %}"></script>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
+    <script src="{% static 'account/js/index.js' %}"></script>
+     
+  
+    <title>{% block title %}{% endblock title %}</title>
+</head>
+<body>
+   
+    {% include 'account/navbar.html' %}
+    {% block body %}{% endblock body %}
+    {% include 'account/footer.html' %}
+    
+    
+
+     <!-- Bootstrap -->
+     <script src="{% static 'account/js/popper.js' %}"></script>
+     <script src="{% static 'account/js/bootstrap.min.js' %}"></script>
+ 
+     <!-- Plugins -->
+     <script src="{% static 'account/js/scrollreveal.min.js' %}"></script>
+     <script src="{% static 'account/js/waypoints.min.js' %}"></script>
+     <script src="{% static 'account/js/jquery.counterup.min.js' %}"></script>
+     <script src="{% static 'account/js/imgfix.min.js' %}"></script> 
+     
+       <script src="{% static 'account/js/custom.js' %}"></script>
+
+     <script async
+     src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBwAH8gLbME8t0UluG7GJClS7CHF0KsPj4&callback=myMap">
+ </script>
+</body>
+</html>

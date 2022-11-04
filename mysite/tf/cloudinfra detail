@@ -1,0 +1,5 @@
+app_endpoint = "https://1aa876dx74.execute-api.ap-south-1.amazonaws.com"
+init_superuser_password = <sensitive>
+rds_master_credentials_arn = "arn:aws:secretsmanager:ap-south-1:078422534449:secret:educationportal_rds_master_credentials-mAwYK1"
+static_bucket = "educationportal-0b24a436432e5a16-static"
+static_url = "https://d1wvz1y3ix6pi6.cloudfront.net/s/"
